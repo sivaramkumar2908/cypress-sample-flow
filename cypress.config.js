@@ -1,5 +1,5 @@
 const { defineConfig } = require("cypress");
-module.exports = {
+module.exports = defineConfig({
   chromeWebSecurity: false,
   defaultCommandTimeout: 80000,
   experimentalSessionAndOrigin: true,
@@ -50,4 +50,4 @@ module.exports = {
     downloadsFolder: 'cypress/downloads',
     video: true,
   },
-};
+});

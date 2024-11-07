@@ -4,11 +4,13 @@
   "description": "'test-flow-for-debug'",
   "main": "index.js",
   "scripts": {
-    "test": "cypress run -b chrome --headed --spec"
+    "test": "cypress run -b chrome --headed --spec",
+    "test-config": "cypress run -b chrome --headed --config-file cypress-test.config.js --spec",
+    "test-updated": "cypress run -b chrome --headed --spec"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "cypress": "^13.15.1"
+    "cypress": "^13.15.2"
   }
 }
